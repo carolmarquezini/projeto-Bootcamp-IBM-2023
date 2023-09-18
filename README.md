@@ -68,7 +68,7 @@ git clone https://github.com/seu-usuario/projeto-bootcamp-ibm-2023.git
 
 **2.** Abra o projeto em sua IDE (por exemplo, IntelliJ IDEA).
 
-**3.** Execute o projeto a partir da classe principal `OrganizaTimes`.
+**3.** Execute o projeto a partir da classe principal `OrganizadorDeTimesApplication`.
 
 **A API estará acessível em http://localhost:8080.**
 
