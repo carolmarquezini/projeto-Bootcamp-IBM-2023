@@ -48,7 +48,7 @@ Nesta API Rest FULL foi utilizado os métodos HTTP para realizar as rotas da apl
 ### Saída 
 
 Ao realizar o **GET** `/times`, a saída deve ser um body com nome do time os jogadores, conforme abaixo:              
-```jsx
+```java
 {
   Time 'A': [Sergio Aguero]
   Time 'B': [Gianluigi Buffon, Gareth Bale]
