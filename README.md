@@ -2,9 +2,9 @@
 
 ## Visão geral
 
-Este projeto diz respeito a uma API RESTful que utiliza os métodos HTTP POST, GET e DELETE para receber uma lista de jogadores e organizar equipes com base na primeira letra de seus sobrenomes, garantindo que não haja jogadores com sobrenomes idênticos na mesma equipe. Adicionalmente, jogadores sem sobrenome serão excluídos.
+Este projeto diz respeito a uma API RESTful que utiliza os métodos HTTP POST, GET e DELETE para receber jogadores e organizar em times com base na primeira letra de seus sobrenomes, garantindo que não haja jogadores com sobrenomes idênticos na mesma equipe. Adicionalmente, jogadores sem sobrenome serão excluídos.
 
-O objetivo principal do CRUD nesta aplicação é permitir a criação de jogadores, a busca por jogadores (e, por consequência, as equipes formadas) e a exclusão de jogadores.
+O objetivo principal do CRUD nesta aplicação é adicionar jogadores, buscar por jogadores (e, por consequência, as equipes formadas) e a exclusão de jogadores.
 
 ---
 
@@ -20,6 +20,7 @@ O objetivo principal do CRUD nesta aplicação é permitir a criação de jogado
 ---
  
 ## Tecnologias utilizadas
+- [x] Spring Boot, Java 17
 - [X] IDE Utilizada: Intellijei / Postman;
 - [X] Versionamento de códigos: Git, GitHub.
 - [X] Arquitetura MVC.
@@ -44,16 +45,19 @@ Nesta API Rest FULL foi utilizado os métodos HTTP para realizar as rotas da apl
 | POST        | `/jogador`             | Adicionar jogadores à liga. O corpo da solicitação deve incluir o nome completo do jogador no formato "Nome Sobrenome".                |  
 | DELETE      | `/jogador/all`         | Para começar a montar novos times ou reiniciar o processo de organização, utilize este endpoint para excluir todos os jogadores da base de dados.          |
 
-### Saída
-```jsx
+### Saída 
 
-Time 'A': [Sergio Aguero]
-Time 'B': [Gianluigi Buffon, Gareth Bale]
-Time 'H': [Gonzalo Higuain]
-Time 'M': [Lionel Messi, Luka Modric, Kylian Mbappé]
-Time 'J': [Neymar Jr.]
-Time 'R': [Sergio Ramos, Cristiano Ronaldo]
-Time 'S': [Thiago Silva]
+Ao realizar o **GET** `/times`, a saída deve ser um body com nome do time os jogadores, conforme abaixo:              
+```jsx
+{
+  Time 'A': [Sergio Aguero]
+  Time 'B': [Gianluigi Buffon, Gareth Bale]
+  Time 'H': [Gonzalo Higuain]
+  Time 'M': [Lionel Messi, Luka Modric, Kylian Mbappé]
+  Time 'J': [Neymar Jr.]
+  Time 'R': [Sergio Ramos, Cristiano Ronaldo]
+  Time 'S': [Thiago Silva]
+}
 
 ```
 
